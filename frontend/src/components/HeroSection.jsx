@@ -1,39 +1,38 @@
-// frontend/src/components/HeroSection.jsx
 import React from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination'; // For dot navigation
-import 'swiper/css/navigation'; // For prev/next arrows (optional)
-import 'swiper/css/effect-fade'; // Optional: for a fade effect
-import 'swiper/css/autoplay';   // For autoplay
+import 'swiper/css/pagination';
+import 'swiper/css/navigation'; 
+import 'swiper/css/effect-fade';
+import 'swiper/css/autoplay';   
 
-// import required modules
 import { Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules';
 
-// Your slide data remains the same
 const heroSlidesData = [
   {
     id: 1,
     imageUrl: "https://wallpapercave.com/wp/wp1879472.jpg",
-    tagline: "Scent Your Story.",
-    description: "Discover a world of exquisite fragrances, crafted to captivate your senses and define your unique essence."
+    tagline: "Every Scent a Story, Every Bottle a Beginning.",
+    description: "Discover a world of exquisite fragrances, crafted to captivate your senses and define your unique essence.",
+    offerText: "🌸 Spring Fling! 20% OFF All Floral Scents! 🌸", // Added offer text
+    offerLink: "/collections/floral" // Optional: link for the offer
   },
   {
     id: 2,
-    imageUrl: "https://wallpapercrafter.com/th800/269702-perfume-bottle-gold-and-cologne-hd.jpg",
+    imageUrl: "https://images.squarespace-cdn.com/content/v1/65a01343d4e0b521531eda0a/1704989566006-CYT5JWM02ZTV7JWGLOG9/lifestyle+perfume+fragrence+bottles+with+heather+and+thistle.jpg",
     tagline: "Unlock Your Aura.",
-    description: "Experience the art of perfumery with our exclusive collection, designed for the modern connoisseur."
+    description: "Experience the art of perfumery with our exclusive collection, designed for the modern connoisseur.",
+    offerText: "✨ Limited Time: Free Gift with orders over $75! ✨"
   },
   {
     id: 3,
-    imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f60b8374934435.5c3e93f519fd5.jpg",
-    tagline: "Elegance. Bottled.",
-    description: "Indulge in scents that speak volumes, transforming moments into lasting memories."
+    imageUrl: "https://cdn.mos.cms.futurecdn.net/VzUqgr8pfbNcfXrpzeVBPE.jpg",
+    tagline: "Making the World Smell Better, One Spritz at a Time.",
+    description: "Indulge in scents that speak volumes, transforming moments into lasting memories.",
   }
 ];
+
 
 const HeroSection = () => {
   const scrollToProducts = () => {
@@ -46,6 +45,7 @@ const HeroSection = () => {
   if (!heroSlidesData || heroSlidesData.length === 0) {
     return null; // Or some fallback UI
   }
+  
 
   return (
     <div className="hero-section swiper-hero-section"> {/* Added swiper-hero-section for specific styling */}
@@ -67,9 +67,7 @@ const HeroSection = () => {
         {heroSlidesData.map((slide) => (
           <SwiperSlide key={slide.id} className="hero-swiper-slide">
             {/* 
-              Each slide will have its own background image for simplicity with Swiper's fade effect,
-              or you can structure it like before with image on one side and text on other.
-              Let's do the image-on-one-side, text-on-other structure within each SwiperSlide.
+             
             */}
             <div className="slide-content-wrapper"> {/* This will be our flex container */}
               <div className="hero-image-container">

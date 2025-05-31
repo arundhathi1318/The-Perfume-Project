@@ -3,7 +3,7 @@
       <div className="container page-container">
         <h1 className="page-title">Contact Us</h1>
         <p>Have questions or want to learn more? Reach out to us!</p>
-        {/* Basic form structure, non-functional for now */}
+        {}
         <form className="contact-form">
           <div>
             <label htmlFor="name">Name:</label>

@@ -1,0 +1,35 @@
+.site-footer {
+  background-color: #0c243c; /* Dark background for contrast, adjust as needed */
+  color: #f4f4f4;        /* Light text color */
+  text-align: center;
+  padding: 50px 15px;    /* Vertical and horizontal padding */
+  margin-top: 40px;      /* Space above the footer */
+  border-top: 3px solid #8B4513; /* Optional: top border with your brand color */
+  font-size: 0.9em;
+}
+
+.footer-content p {
+  margin: 5px 0; /* Space between the two lines of text */
+}
+
+.powered-by {
+  font-style: italic;
+  font-size: 0.85em;
+  color: #ccc; /* Slightly dimmer color for "powered by" */
+}
+
+/* Optional: If you want the "Powered by" on the same line with a separator */
+/*
+.footer-content p {
+  margin: 0;
+  display: inline;
+}
+.footer-content p:first-child::after {
+  content: " | ";
+  margin: 0 8px;
+  color: #777;
+}
+.site-footer {
+  padding: 15px;
+}
+*/

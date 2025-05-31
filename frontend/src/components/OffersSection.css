@@ -1,0 +1,73 @@
+.offers-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fdf6e3; /* A very light, warm background for the whole section */
+  /* Or keep it transparent if HomePage has a suitable background */
+}
+
+.offers-section-title {
+  font-size: 2.2em;
+  color: #8B4513; /* Your brand color */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-card {
+  background-color: #ffffff; /* Default card background */
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.offer-card-title {
+  font-size: 1.6em;
+  color: #D2691E; /* Chocolate - accent color */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.offer-card-description {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allows description to take space if titles are different heights */
+}
+
+.offer-card-description strong {
+  color: #8B4513; /* Brand color for emphasis */
+  font-weight: 600;
+}
+
+.offer-card-cta {
+  background-color: #8B4513; /* Your brand color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  display: inline-block; /* For padding to apply correctly */
+}
+
+.offer-card-cta:hover {
+  background-color: #A0522D; /* Darker shade */
+}
