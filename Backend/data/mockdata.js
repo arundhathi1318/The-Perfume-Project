@@ -95,9 +95,9 @@ const products = [
         description: "La Vie Est Belle, a French expression meaning 'life is beautiful,' is about choosing your own path to happiness and inspiring others. Joyful femininity is expressed through this energizing women's perfume.",
         price: 102.00,
          images: [
-            "/images/51.jpg", 
-            "/images/52.jpg",
-            "/images/53.jpg",
+            "/images/71.jpg", 
+            "/images/72.jpg",
+            "/images/73.jpg",
         ],
         sizes: ["30ml", "50ml", "100ml"],
         category: "Women"
@@ -109,9 +109,9 @@ const products = [
         description: "Acqua di Giò Eau de Toilette is the iconic men's fragrance inspired by the Mediterranean. This aquatic, hyacinth fragrance opens with a splash of fresh, Calabrian bergamot, neroli, and green tangerine.",
         price: 90.00,
         images: [
-            "/images/51.jpg", 
-            "/images/52.jpg",
-            "/images/53.jpg",
+            "/images/81.jpg", 
+            "/images/82.jpg",
+            "/images/83.jpg",
         ],
         sizes: ["50ml", "100ml", "200ml"],
         category: "Men"
@@ -123,9 +123,9 @@ const products = [
         description: "Gucci Bloom Eau de Parfum is a rich white floral scent that transports to a verdant garden. Notes of natural Tuberose and Jasmine create an unexpectedly rich white floral scent on the skin.",
         price: 110.00,
          images: [
-            "/images/51.jpg", 
-            "/images/52.jpg",
-            "/images/53.jpg",
+            "/images/91.jpg", 
+            "/images/92.jpg",
+            "/images/93.jpg",
         ],
         sizes: ["30ml", "50ml", "100ml"],
         category: "Women"
@@ -137,9 +137,9 @@ const products = [
         description: "1 Million Eau de Toilette is an audaciously masculine fragrance for the man who dares to be too much. This iconic scent features notes of spicy leather, blood mandarin, and peppermint.",
         price: 85.00,
          images: [
-            "/images/51.jpg", 
-            "/images/52.jpg",
-            "/images/53.jpg",
+            "/images/12.jpg", 
+            "/images/11.jpg",
+            "/images/13.jpg",
         ],
         sizes: ["50ml", "100ml", "200ml"],
         category: "Men"
