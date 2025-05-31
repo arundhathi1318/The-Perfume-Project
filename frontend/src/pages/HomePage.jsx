@@ -10,7 +10,6 @@ const HomePage = () => {
     <div>
       <HeroSection/>
       
-      <OffersSection/>
       <ProductList />
       <Footer/>
     </div>
