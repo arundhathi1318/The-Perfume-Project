@@ -1,15 +1,13 @@
-// backend/models/Product.js
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
-    name: { type: String, required: true, trim: true }, // Added trim: true - good practice
+    name: { type: String, required: true, trim: true }, 
     description: { type: String, required: true },
-    shortDescription: { type: String, required: true }, // Make sure your mockData uses this exact field name
+    shortDescription: { type: String, required: true }, 
     price: { type: Number, required: true },
-    images: [{ type: String }], // Array of image URLs
-    sizes: [{ type: String }], // e.g., ["50ml", "100ml"]
+    images: [{ type: String }], 
+    sizes: [{ type: String }], 
     category: String, // Optional
-    // No need to store reviews array here, as reviews are a separate collection
 }, { timestamps: true });
 
 module.exports = mongoose.model('Product', productSchema);

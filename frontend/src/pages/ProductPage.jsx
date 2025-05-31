@@ -1,4 +1,3 @@
-// frontend/src/pages/ProductPage.js
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById, getReviewsByProductId } from '../services/api';
@@ -6,6 +5,7 @@ import ImageGallery from '../components/ImageGallery.jsx';
 import ReviewList from '../components/ReviewList.jsx';
 import ReviewForm from '../components/ReviewForm.jsx';
 import ShareButton from '../components/ShareButton.jsx';
+import ReviewCard from '../components/ReviewCard'; // <-- IMPORT ReviewCard
 
 const ProductPage = () => {
 const { id } = useParams();
@@ -59,7 +59,7 @@ return (
         <ImageGallery images={product.images} />
         <div className="product-info">
         <h1>{product.name}</h1>
-        <p className="price">${product.price.toFixed(2)}</p>
+        <p className="price">₹{product.price.toFixed(2)}</p>
         <p className="description">{product.description}</p>
         
         {product.sizes && product.sizes.length > 0 && (

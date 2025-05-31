@@ -1,9 +1,9 @@
   
-  import ProductList from '../components/ProductList'; // <-- ADD THIS IMPORT
+  import ProductList from '../components/ProductList'; 
 
   const CollectionsPage = () => {
     return (
-      <div className="container page-container"> {/* Added page-container for common styling */}
+      <div className="container page-container"> {}
         <h1 className="page-title">Our Collections</h1>
         <ProductList />
       </div>

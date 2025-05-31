@@ -1,8 +1,8 @@
 import React from 'react';
-import './Footer.css'; // We'll create this for styling
+import './Footer.css'; 
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear(); // Get current year dynamically
+  const currentYear = new Date().getFullYear(); 
 
   return (
     <footer className="site-footer">

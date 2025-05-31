@@ -1,4 +1,3 @@
-// frontend/src/components/ProductList.js
 import React, { useState, useEffect } from 'react';
 import ProductCard from './ProductCard';
 import { getProducts } from '../services/api';
@@ -31,8 +30,7 @@ if (loading) return <p style={{textAlign: 'center', fontSize: '1.2em'}}>Loading 
 if (error) return <p style={{textAlign: 'center', color: 'red', fontSize: '1.2em'}}>{error}</p>;
 if (products.length === 0) return <p style={{textAlign: 'center', fontSize: '1.2em'}}>No products found.</p>;
 
-// frontend/src/components/ProductList.js
-// ... (imports and state logic) ...
+
 return (
     <div id="product-list-section" className="container">
         <h2 className="product-list-title">Featured Perfumes</h2>
@@ -43,7 +41,6 @@ return (
         </div>
     </div>
 );
-// ...
 };
 
 export default ProductList;

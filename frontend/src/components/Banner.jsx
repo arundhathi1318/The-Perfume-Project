@@ -1,5 +1,6 @@
 // frontend/src/components/Banner.js
 import React from 'react';
+import './Banner.css'; // We'll create this for styling
 
 const Banner = () => {
 return (

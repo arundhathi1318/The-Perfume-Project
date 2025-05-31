@@ -17,7 +17,7 @@ body {
 
 .navbar {
     background-color: #fff;
-    padding: 18px 0;
+    padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -45,13 +45,12 @@ body {
 }
 
 .navbar-brand {
-    /* ... your existing styles ... */
-    font-size: 2.5em;
+      font-size: 2.5em;
     font-weight: bold;
     color: #8B4513;
     text-decoration: none;
     letter-spacing: -0.5px;
-    display: inline-block; /* Important for transform */
+    display: inline-block;
     animation: gentleFloat 10s infinite ease-in-out;
 }
 .navbar-links {
@@ -80,16 +79,13 @@ body {
     font-weight: 600;
     border-bottom-color: #8B4513;
 }
-
-/* ==========================================================================
-   3. Hero Section (Swiper Based)
-   ========================================================================== */
 .hero-section.swiper-hero-section {
     min-height: 75vh;
     margin-bottom: 50px;
     position: relative;
     background-color: #fdfbf7;
     overflow: hidden;
+    font-size: 1.2rem;
 }
 
 .hero-swiper-container {
@@ -112,7 +108,7 @@ body {
 }
 
 .hero-swiper-slide .hero-image-container {
-    flex: 0 1 55%; /* Image takes 55% width */
+    flex: 0 1 55%; 
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -121,7 +117,6 @@ body {
     border-top-left-radius: 0; 
     border-bottom-left-radius: 0;
 }
-
 .hero-swiper-slide .hero-image {
     width: 100%;
     height: 100%;
@@ -179,7 +174,6 @@ body {
     box-shadow: 0 5px 8px rgba(0,0,0,0.15);
 }
 
-/* Swiper Controls Customization */
 .swiper-hero-section .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
@@ -246,11 +240,22 @@ body {
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-.product-card:hover {
-    transform: translateY(-7px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    background-color: #fdfaf6;
+
+.product-card {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
 }
+
+.product-card:hover {
+    background-color: #fdfaf6;  /* New background on hover */
+    color: #a7192c;             /* New text color on hover */
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+
 .product-card img {
     width: 100%;
     height: 260px;
@@ -374,9 +379,8 @@ body {
     resize: vertical;
 }
 
-/* Shared submit button style */
-.submit-button, /* For Contact, Login, Signup pages */
-.review-form button[type="submit"] { /* For Review form specifically */
+.submit-button, 
+.review-form button[type="submit"] { 
     background-color: #8B4513;
     color: white;
     padding: 12px 25px;
@@ -387,30 +391,28 @@ body {
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: block;
-    width: 100%; /* Full width for contact/auth forms */
+    width: 100%; 
 }
 .submit-button:hover,
 .review-form button[type="submit"]:hover {
     background-color: #A0522D;
     transform: translateY(-1px);
 }
-/* If Review Form button shouldn't be full width */
 .review-form button[type="submit"] {
     width: auto;
     display: inline-block;
 }
 
-/* Auth Page specific styling */
-.auth-form { /* Wrapper for Login/Signup forms specifically */
-    max-width: 450px; /* Slightly narrower for auth forms */
+.auth-form {
+    max-width: 450px; 
     margin: 0 auto;
     padding: 30px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-.contact-form { /* Wrapper for Contact form */
-    max-width: 550px; /* Contact form can be a bit wider */
+.contact-form { 
+    max-width: 550px;
     margin: 0 auto;
     padding: 30px;
     background-color: #fff;
@@ -431,7 +433,6 @@ body {
     text-decoration: underline;
 }
 
-/* Share Button */
 .share-button {
     background-color: #8B4513;
     color: white;
@@ -449,23 +450,20 @@ body {
 .share-button svg { margin-right: 8px; fill: white; }
 .share-button:hover { background-color: #A0522D; transform: translateY(-1px); }
 
-/* ==========================================================================
-   7. Responsive Design Adjustments
-   ========================================================================== */
-@media (max-width: 992px) { /* Tablet and landscape mobile */
+@media (max-width: 992px) { 
     .hero-swiper-slide .slide-content-wrapper { flex-direction: column-reverse; }
     .hero-swiper-slide .hero-image-container {
         width: 100%;
-        flex-basis: auto; /* Reset flex-basis for stacked view */
+        flex-basis: auto; 
         height: 45vh;
         max-height: 350px;
-        border-radius: 15px; /* General radius for stacked view */
+        border-radius: 15px; 
     }
     .hero-swiper-slide .hero-content {
         padding: 30px 40px;
         align-items: center;
         text-align: center;
-        flex-basis: auto; /* Reset flex-basis */
+        flex-basis: auto;
     }
     .hero-swiper-slide .hero-button { align-self: center; }
 
@@ -473,16 +471,16 @@ body {
     .image-gallery .main-image { max-height: 450px; }
 }
 
-@media (max-width: 768px) { /* Portrait tablet and large mobile */
+@media (max-width: 768px) { 
     .navbar .container { flex-direction: column; align-items: flex-start; }
-    .navbar-brand { margin-bottom: 10px; font-size: 2em; /* Adjust if too big when stacked */ }
+    .navbar-brand { margin-bottom: 10px; font-size: 2em; }
     .navbar-links { margin-top: 10px; flex-wrap: wrap; width: 100%; justify-content: flex-start; }
     .navbar-links .nav-link { margin-left: 0; margin-right: 20px; margin-bottom: 8px; font-size: 1em;}
 
     .product-list { gap: 25px; }
 }
 
-@media (max-width: 576px) { /* Smaller mobile phones */
+@media (max-width: 576px) { 
     .hero-swiper-container, .hero-section.swiper-hero-section { min-height: 70vh; }
     .hero-swiper-slide .hero-image-container { height: 40vh; max-height: 280px; border-radius: 10px; }
     .hero-swiper-slide .hero-content { padding: 20px; }
@@ -498,19 +496,14 @@ body {
     .contact-form, .auth-form { padding: 20px; }
 }
 .hero-offer-banner {
-  background-color: #FFD700; /* A bright, attention-grabbing color like gold */
-  color: #333; /* Dark text for contrast */
+  background-color: #FFD700;
+  color: #333; 
   padding: 10px 20px;
   border-radius: 8px;
-  margin-top: 15px; /* Space from description */
-  margin-bottom: 20px; /* Space before the button */
+  margin-top: 15px; 
+  margin-bottom: 20px; 
   text-align: center;
-  width: auto; /* Or max-content, or a specific width */
-  max-width: 90%; /* Ensure it doesn't get too wide on larger text content */
-  align-self: center; /* Center the banner if hero-content is flex-start */
-  /* Or if you want it full width of the text content area:
-     width: 100%;
-     align-self: stretch;
-  */
+  width: auto; 
+  max-width: 90%; 
+  align-self: center; 
 }
-

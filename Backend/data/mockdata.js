@@ -73,7 +73,6 @@ const products = [
         sizes: ["30ml", "50ml", "90ml"],
         category: "Women"
     },
-    // --- Adding 5 more products ---
     {
 
         name: "Bleu de Chanel",
